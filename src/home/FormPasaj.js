@@ -21,7 +21,7 @@ function FormPasaje() {
           <input type="text" className="form-control" id="retorno" placeholder="Ej. 15/01/2023" />
         </div>
         <div className="col-12 mt-3">
-          <button type="submit" className="btn btn-primary mb-2">Buscar Pasaje</button>
+          <button type="submit" className="btn btn-dark mb-2">Buscar Pasaje</button>
         </div>
       </form>
     </div>

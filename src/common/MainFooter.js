@@ -4,7 +4,7 @@ import "../css/footer.css";
 
 function MainFooter() {
   return (
-    <div className="footer-basic">
+    <div className="footer-basic mt-5">
       <footer>
         <div className="enlaces" style={{ height: '0px' }}>
           <ul id="listaen">
@@ -16,9 +16,9 @@ function MainFooter() {
         </div>
         <div>
           <ul className="list-inline">
-            <li className="list-inline-item"><a href="#">Home</a></li>
+            <li className="list-inline-item"><a href="/">Home</a></li>
             <li className="list-inline-item"><a href="#">Servicios</a></li>
-            <li className="list-inline-item"><a href="#">Nosotros</a></li>
+            <li className="list-inline-item"><a href="/nosotros">Nosotros</a></li>
             <li className="list-inline-item"><a href="#">Terminos</a></li>
             <li className="list-inline-item"><a href="#">Equipo de Desarrollo</a></li>
           </ul>

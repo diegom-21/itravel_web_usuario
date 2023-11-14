@@ -8,10 +8,6 @@ function Inicio(){
         <>
             <Banners />
             <FormPasaje/>
-            <br></br>
-            <div>
-                <h1>A viajar seguro!</h1>
-            </div>  
             <Cards/>
         </>
     )
