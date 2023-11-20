@@ -17,7 +17,7 @@ function Cards() {
 
       <div className="row mt-4">
         <div className="col-md-4">
-          <div className="card">
+          <div className="card" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.4"}}>
             <img src={card1} class="card-img-top" style={{ width: 'auto', height: '230px' }}></img>
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h3 className="card-title" style={{fontWeight:"bold"}}>Pasaje a Cusco</h3>
@@ -26,7 +26,7 @@ function Cards() {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card">
+          <div className="card" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.4"}}>
             <img src={card2} class="card-img-top" style={{ width: 'auto', height: '230px' }}></img>
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h3 className="card-title" style={{fontWeight:"bold"}}>Ten Un viaje seguro</h3>
@@ -35,7 +35,7 @@ function Cards() {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card">
+          <div className="card" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.4"}}>
             <img src={card3} class="card-img-top" style={{ width: 'auto', height: '230px' }}></img>
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h3 className="card-title" style={{fontWeight:"bold"}}>Reserva con Facilidad</h3>
@@ -46,7 +46,7 @@ function Cards() {
       </div>
       <div className="row mt-4">
         <div className="col-md-4">
-          <div className="card">
+          <div className="card" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.4"}}>
             <img src={card4} class="card-img-top" style={{ width: 'auto', height: '230px' }}></img>
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h3 className="card-title" style={{fontWeight:"bold"}}>Destino Exótico</h3>
@@ -55,7 +55,7 @@ function Cards() {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card">
+          <div className="card" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.4"}}>
             <img src={card5} class="card-img-top" style={{ width: 'auto', height: '230px' }}></img>
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h3 className="card-title" style={{fontWeight:"bold"}}>Ofertas Para todos</h3>
@@ -64,7 +64,7 @@ function Cards() {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card">
+          <div className="card"style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.4"}}>
             <img src={card6} class="card-img-top" style={{ width: 'auto', height: '230px' }}></img>
             <div className="card-body" style={{ textAlign: 'center' }}>
               <h3 className="card-title" style={{fontWeight:"bold"}}>Asistencia 24/7</h3>

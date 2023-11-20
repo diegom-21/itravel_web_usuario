@@ -17,9 +17,9 @@ function MainFooter() {
         <div>
           <ul className="list-inline">
             <li className="list-inline-item"><a href="/">Home</a></li>
-            <li className="list-inline-item"><a href="#">Servicios</a></li>
+            <li className="list-inline-item"><a href="/servicios">Servicios</a></li>
             <li className="list-inline-item"><a href="/nosotros">Nosotros</a></li>
-            <li className="list-inline-item"><a href="#">Terminos</a></li>
+            <li className="list-inline-item"><a href="/terminos">Politicas y Terminos</a></li>
             <li className="list-inline-item"><a href="#">Equipo de Desarrollo</a></li>
           </ul>
         </div>

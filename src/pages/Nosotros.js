@@ -50,13 +50,13 @@ function Nosotros() {
       <section className="contenedor">
         <h2 className="titulo"></h2>
         <div className="content-cards">
-          <article className="cards">
+          <article className="cards" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5"}}>
             <i><FontAwesomeIcon icon={faBus} /></i>
             <h3>Venta de Pasajes</h3>
             <p>Compra tus pasajes interprovinciales con nosotros y disfruta de un viaje cómodo y seguro.</p>
             <a href="#visita" className="cta">Ver más</a>
           </article>
-          <article className="cards">
+          <article className="cards" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.5"}}>
             <i><FontAwesomeIcon icon={faTicketAlt} /></i>
             <h3>Ofertas Especiales</h3>
             <p>Descubre nuestras ofertas especiales en pasajes. ¡No te pierdas los descuentos exclusivos!</p>
@@ -93,7 +93,7 @@ function Nosotros() {
         </div>
         <div className="svg-wave" style={{ height: '150px', overflow: 'hidden' }}>
           <svg viewBox="0 0 500 150" preserveAspectRatio="none" style={{ height: '100%', width: '100%' }}>
-            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{ stroke: 'none', fill: '#353333' }}></path>
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style={{ stroke: 'none', fill: '#131313' }}></path>
           </svg>
         </div>
       </section>
