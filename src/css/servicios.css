@@ -3,36 +3,40 @@
     background-size: cover;
 }
 
+#rutas{
+    background: linear-gradient(rgba(5,7,12),rgba(5,7,12, 0.25)),  url(../assets/img/rutaa.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 .contenidoserv {
     padding: 25px;
     margin-left: 0%;
-    border-radius: 20px; /* Ajusta el valor según tus necesidades para bordes circulares */
+    border-radius: 20px; 
     justify-content: center;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 70%; /* Cambia el valor según tus necesidades */
-    margin: auto; /* Centra el contenido */
+    max-width: 70%; 
+    margin: auto; 
 }
 
 .imageconten img {
-    border-radius: 15px; /* Ajusta el valor según tus necesidades para bordes circulares */
-    max-width: 134%; /* Ajusta el tamaño máximo de la imagen */
+    border-radius: 15px; 
+    max-width: 134%; 
 }
 
 .contenidoserv2 {
     padding: 25px;
-    border-radius: 20px; /* Ajusta el valor según tus necesidades para bordes circulares */
+    border-radius: 20px; 
     justify-content: center;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     width: 130%;
     height: auto;
-    margin: auto; /* Centra el contenido */
+    margin: auto; 
 }
 
 .imageconten2 img {
     margin-left: 130px;
-    border-radius: 15px; /* Ajusta el valor según tus necesidades para bordes circulares */
-    width: 512px; /* Ajusta el tamaño máximo de la imagen */
+    border-radius: 15px; 
+    width: 512px; 
     height: 304px;
 }

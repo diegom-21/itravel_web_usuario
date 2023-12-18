@@ -1,0 +1,17 @@
+.cuadradito {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    margin: 5px;
+  }
+
+#pasaje{
+    background: linear-gradient(rgba(5,7,12),rgba(5,7,12, 0.25)),  url(../assets/img/comprasaje.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.selected {
+  background-color: #ffcc00; 
+  color: #000; 
+}

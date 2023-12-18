@@ -1,10 +1,8 @@
-
 function Terminos() {
   return (
     <div className="container">
         <br />
         <h1 style={{fontSize: "62px", fontWeight: "bold"}}>Políticas y Términos</h1>
-        {/* Card con Términos y Condiciones */}
 
         <div id='cardTerminos' className="card mt-4" style={{boxShadow: "0 0 20px rgba(0, 0, 0, 0.3"}}>
             <div className="card-body">

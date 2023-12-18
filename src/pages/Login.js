@@ -1,8 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/img/logo.jpg';
 import '../css/login.css';
+import { useAuth } from '../contexts/AuthContext'; 
+
 export function Login() {
-  // LOGICA
+  const { setIsLoggedIn, setUser } = useAuth();
+  const [nombrecompleto, setNombrecompleto] = useState('');
+  const [dni, setdni] = useState('');
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch('http://localhost:8090/itravel/usuarios/autenticarUsuario', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          nombrecompleto,
+          dni,
+        }),
+      });
+  
+      if (response.ok) {
+        const userData = await response.json(); // Obtén los datos del usuario
+        setIsLoggedIn(true);
+        setUser(userData); // Almacena los datos del usuario en el contexto
+        localStorage.setItem('usuario', nombrecompleto);
+        window.location.href = '/';
+      } else {
+        console.log('Autenticación fallida. Mensaje del servidor:', await response.text());
+      }
+    } catch (error) {
+      console.error('Error al autenticar:', error);
+    }
+  };
+
+  
+
   return (
     <div>
       <section id='sectionlogin' style={{ display: 'flex', alignItems: 'center', height: '50vh' }}>
@@ -16,30 +52,43 @@ export function Login() {
         </div>
 
         <div className="formbox">
-          <form action="" method="post" className="mt-4">
+          <form action="" method="" className="mt-4">
             <h1 style={{ color: 'white', fontWeight: 'bold', fontSize: '40px'}}>iTravel</h1>
             <div className="inputbox">
-              <input type="email" id="email" required />
-              <label htmlFor="email">Email:</label>
+              <input
+                type="text"
+                id="nombrecompleto"
+                required
+                value={nombrecompleto}
+                onChange={(e) => setNombrecompleto(e.target.value)}
+              />
+              <label htmlFor="nombrecompleto">Nombre:</label>
             </div>
             <div className="inputbox">
-              <input type="password" id="password" required />
-              <label htmlFor="password">Password:</label>
+              <input
+                type="text"
+                id="dni"
+                required
+                value={dni}
+                onChange={(e) => setdni(e.target.value)}
+              />
+              <label htmlFor="dni">DNI:</label>
             </div>
             <div>
-              <button style={{borderRadius: '40px'}}>Iniciar sesión</button>
-            </div>
-            <div className="register">
-              <h5>No tienes cuenta? <a href="/registrar">Registrate</a></h5>
+              <button
+                style={{borderRadius: '40px'}}
+                onClick={handleLogin}
+              >
+                Iniciar sesión
+              </button>
             </div>
           </form>
         </div>
       </section>
-
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </div>
   );
 }
+
+
 
 export default Login;
